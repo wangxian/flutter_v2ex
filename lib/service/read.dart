@@ -51,7 +51,7 @@ class Read {
       'content': content
     };
     var keys = box.keys;
-    if(keys.length >= 4){
+    if (keys.length >= 4) {
       box.delete(keys.first);
     }
     if (keys.contains(nowDay)) {
@@ -75,7 +75,7 @@ class Read {
   }
 
   // 清除所有已读
-  Future<void> clear() async{
+  Future<void> clear() async {
     await box.clear();
   }
 
